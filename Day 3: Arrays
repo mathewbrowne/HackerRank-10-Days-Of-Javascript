@@ -1,0 +1,5 @@
+function getSecondLargest(nums) {
+    // Complete the function
+    const distinct = [...new Set(nums.sort(function(a, b){return a-b}))];
+    return distinct[distinct.length - 2];
+}

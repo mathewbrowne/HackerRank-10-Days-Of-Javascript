@@ -1,0 +1,26 @@
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+
+function isVowel(x) { 
+        return ("aeiou".indexOf(x) != -1); 
+    }
+    
+function vowelsAndConsonants(s) {
+    var vowels = [];
+    var consonants = [];
+    
+    for (var i = 0; i < s.length; i++){
+        let current_character = s[i];
+        if(isVowel(current_character)){
+            console.log( current_character );
+        }
+        else{
+            consonants.push(current_character);
+        }
+    }
+
+    console.log( consonants.join('\n') );
+    
+}
